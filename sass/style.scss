@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    header{
+        width: 100%;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        position: fixed;
+        box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);
+    }
+footer{
+    width: 300px;
+    float: left;
+    position: fixed;
+    margin-top: -10px;
+    background-color: white;
+    #div9{
+        width: 300px;
+        height: 590px;
+        border: 1px solid blue;
+        display: inline-block;
+    }
+    @media screen and (max-width:1300px){
+        display: none;
+        transition: 6s;
+    }
+}
+main{
+    height: 1500px;
+    width: 77%;
+    float: right;
+    border: 1px solid aqua;
+    @media screen and (max-width:1300px){
+       width: 100%;
+    }
+}
+}

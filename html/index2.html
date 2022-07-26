@@ -1,0 +1,787 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NiceAdmin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="icon" href="../img/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../sass/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+   </head>
+  <body>
+    <!---------
+    -----------
+    -----------
+    --header --
+    -----------
+    -----------
+    ---------->
+      <header>
+          <nav class="navbar bg-light fixed-top">
+            <div class="container-fluid">
+              <div> <a class="navbar-brand" href="https://bootstrapmade.com/demo/NiceAdmin/">
+                <img src="../img/logo.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <span id="fv" class="fw-bold fs-3 text-primary">NiceAdmin</span>
+              </a>
+              </div>
+              <div class="dd d-flex">
+                <span style="cursor: pointer;" class="fs-3" id="btns"><i class="fas fa-bars"></i></span>
+
+                <div id="search">
+                    <form class="d-flex ms-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+              </div>
+              <div>
+              </div>
+
+
+              <!----------
+              ------------
+              ------------
+              - dropdown -
+              ------------
+              ------------
+              ----------->
+              <div class="d-flex">
+            <div class="dropdown">
+              <button type="button" class="btn btn-outline-primary position-relative  dropdown"type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span><i class="far fa-bell"></i></span>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-info">
+                4
+                    <span class="visually-hidden">unread messages</span>
+                </span>
+            </button>
+              <ul style="margin-left: -270px;width: 320px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">You have 4 new notifications <button class="btn btn-primary">View All</button></a></li><hr>
+                <li><a class="dropdown-item" href="#"><h6> lorem Ipsum</h6>Quae dolorem earum veritatis oditseno 30 min. ago</a></li><hr>
+                <li><a class="dropdown-item" href="#"><h6>Atque rerum nesciunt</h6>Quae dolorem earum veritatis oditseno 1 hr. ago</a></li><hr>
+                <li><a class="dropdown-item" href="#"><h6>Sit rerum fuga</h6>Quae dolorem earum veritatis oditseno 2 hrs. ago</a></li><hr>
+                <li><a class="dropdown-item" href="#"><h6>Dicta reprehenderit</h6>Quae dolorem earum veritatis oditseno 4 hrs. ago</a></li><hr>
+                <p class="text-center"><a href="">Show all notifications</a></p>
+              </ul>
+            </div>
+
+            <div class="dropdown">
+              <button class="btn btn-outline-primary position-relative  dropdown"type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span><i class="far fa-comment-dots"></i></span>
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                3
+                    <span class="visually-hidden">unread messages</span>
+                </span>
+            </button>
+            <ul style="margin-left: -270px;width: 320px;" class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">You have 3 new messages<button class="btn btn-primary">View All</button></a></li><hr>
+              <li><a class="dropdown-item" href="#"><h6><img style="width: 40px;height: 40px;" class="img-fluid rounded-circle" src="../img/messages-1.jpg" alt="">Maria Hudson</h6> Velit asperiores et ducimus soluta <br> repudiandae labore officia est ut...4 hrs. <br> ago</a></li><hr>
+              <li><a class="dropdown-item" href="#"><h6><img style="width: 40px;height: 40px;" class="img-fluid rounded-circle" src="../img/messages-2.jpg" alt="">Anna Nelson </h6>Velit asperiores et ducimus soluta <br> repudiandae labore officia est ut 6 hrs. <br> ago</a></li><hr>
+              <li><a class="dropdown-item" href="#"><h6><img style="width: 40px;height: 40px;" class="img-fluid rounded-circle" src="../img/messages-3.jpg" alt="">David Muldon </h6>Velit asperiores et ducimus soluta <br> repudiandae labore officia est ut 8 hrs. <br> ago</a></li><hr>
+              <p class="text-center"><a href="">Show all notifications</a></p>
+            </ul>
+            </div>
+      
+                                   
+
+                <img class="rounded-circle ms-4" src="../img/photo_2022-04-06_18-21-26.jpg" width="40px" height="40px" alt="" type="button" class="btn btn-light dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                <div class="dropstart">
+                    <span id="drop" type="button" class="btn btn-light dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+                    <span id="drop" class="fw-bold text-primary">Imiyaminov Z</span>
+                    </span>
+                    <ul  class="dropdown-menu mt-5 ms-4" aria-labelledby="dropdownMenuOffset">
+                        <h6 class="text-muted text-center">Imiyaminov Z</h6>
+                        <p class="text-center text-muted">Web Developer</p>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-muted" href="#"><i class="far fa-user"></i><span class="ms-2 text-muted">My Profile</span></a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-muted" href="#"><i class="fas fa-cog"></i><span class="ms-2 text-muted">Account Settings</span></a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-muted" href="#"><i class="far fa-question-circle"></i><span class="ms-2 text-muted">Need Help?</span></a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item text-muted" href="#"><i class="fas fa-sign-out-alt"></i><span class="ms-2 text-muted">Sign Out</span></a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            </div>
+          </nav>
+      </header>
+    <!---------
+    -----------
+    -----------
+    --main --
+    -----------
+    -----------
+    ---------->
+      <main id="main" class="mt-5">
+        <div class="container-fluid ">
+        <div class="row">
+          <div style="border: 0px;" id="st" class="col-xl-8 col-lg-8">
+            <div class="container-fluid">
+                <h1>Dashboard</h1>
+                <p>Home / Dashboard</p>
+                  <div class="row g-2">
+                  <div style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="col-xl-6 col-md-6">
+                  <div class="p-3 border bg-light">
+                    <div class="row">
+                      <div class="col-xl-6 col-6">
+                    <p>Sales | Today</p>
+                  </div>
+                  <div class="col-xl-6 col-6">
+                    <div style="float: right;" class="btn-group dropstart">
+                      <a style="text-decoration: none;" href="" type="button" class="dropdown fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        ...
+                      </a>
+                      <ul style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="dropdown-menu mt-4">
+                        <div class="container-fluid">
+                        <p>FILTER</p>
+                        <p>Today</p>
+                        <p>This Month</p>
+                        <p>This Year</p>
+                      </div>
+                      </ul>
+                    </div>
+                  </div>
+                  <h1><i class="fas fa-cart-shopping text-primary"></i><span style="margin-left: 40px;color: #012970;">145</span><br><span style="font-size: 15px;margin-left: 75px;">12% increase</span></h1>
+                  </div>
+                  </div>
+                  </div>
+                    <div style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="col-xl-6 col-md-6">
+                      <div class="p-3 border bg-light">
+                        <div class="row">
+                          <div class="col-xl-8 col-8">
+                        <p>Revenue | This Month</p>
+                      </div>
+                      <div class="col-xl-4 col-4">
+                        <div style="float: right;" class="btn-group dropstart">
+                          <a style="text-decoration: none;" href="" type="button" class="dropdown fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                            ...
+                          </a>
+                          <ul style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="dropdown-menu mt-4">
+                            <div class="container-fluid">
+                            <p>FILTER</p>
+                            <p>Today</p>
+                            <p>This Month</p>
+                            <p>This Year</p>
+                          </div>
+                          </ul>
+                        </div>
+                      </div>
+                      <h1><i class="fa-regular fa-dollar-sign text-success"></i><span style="margin-left: 40px;">145</span><br><span style="font-size: 15px;margin-left: 55px;">12% increase</span></h1>
+                    </div>
+                    </div>
+                    </div>
+                    <div  style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="col-xl-12 mt-4 bg-white">
+                      <div class="p-3 border bg-light">
+                        <div class="row">
+                          <div class="col-xl-6 col-6">
+                        <p>Customers | This Year</p>
+                      </div>
+                      <div class="col-xl-6 col-6">
+                        <div style="float: right;" class="btn-group dropstart">
+                          <a style="text-decoration: none;" href="" type="button" class="dropdown fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                            ...
+                          </a>
+                          <ul style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="dropdown-menu mt-4">
+                            <div class="container-fluid">
+                            <p>FILTER</p>
+                            <p>Today</p>
+                            <p>This Month</p>
+                            <p>This Year</p>
+                          </div>
+                          </ul>
+                        </div>
+                      </div>
+                      <h1><i class="fas fa-user-group text-danger"></i><span style="margin-left: 40px;">145</span><br><span style="font-size: 15px;margin-left: 55px;">12% increase</span></h1>
+                    </div>
+                      </div>
+                    </div>
+
+                    <div style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="col-xl-12 mt-4">
+                      <div class="p-3 border bg-light">
+                        <div class="row">
+                          <div class="col-xl-6 col-6">
+                            <p>Reports /Today</p>
+                      </div>
+                      <div class="col-xl-6 col-6">
+                        <div style="float: right;" class="btn-group dropstart">
+                          <a style="text-decoration: none;" href="" type="button" class="dropdown fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                            ...
+                          </a>
+                          <ul style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="dropdown-menu mt-4">
+                            <div class="container-fluid">
+                            <p>FILTER</p>
+                            <p>Today</p>
+                            <p>This Month</p>
+                            <p>This Year</p>
+                          </div>
+                          </ul>
+                        </div>
+                      </div>
+                      </div>
+                      <div class="col-xl-12">
+                        <img class="img-fluid" src="../img/3333.jpg" alt="">
+                      </div>
+                    </div>
+                    </div>
+                  
+                      <div style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="col-xl-12 mt-4">
+                        <div class="p-3 border bg-light">
+                          <div class="row">
+                            <div class="col-xl-6 col-6">
+                              <p>Recent Sales | Today</p>
+                        </div>
+                        <div class="col-xl-6 col-6">
+                          <div style="float: right;" class="btn-group dropstart">
+                            <a style="text-decoration: none;" href="" type="button" class="dropdown fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                              ...
+                            </a>
+                            <ul style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="dropdown-menu mt-4">
+                              <div class="container-fluid">
+                              <p>FILTER</p>
+                              <p>Today</p>
+                              <p>This Month</p>
+                              <p>This Year</p>
+                            </div>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-xl-6 col-cm-6">
+                          <div style="display: inline-flex;">
+                          <select name="" id="">
+                            <option value="">5</option>
+                            <option selected>10</option>
+                            <option value="">15</option>
+                            <option value="">20</option>
+                            <option value="">25</option>
+                          </select>
+                          <p>entries per page</p>
+                        </div>
+                        </div>
+                        <div class="col-xl-6 col-cm-6">
+                          <input style="float: right;" class="form-control" type="text" placeholder="search">
+                        </div>
+
+                        </div>  
+                        <div class="table-responsive">
+                        <table class="table table-borderless">
+                          <thead>
+                            <tr>
+                              <th scope="col">#2644</th>
+                              <th scope="col">Customer</th>
+                              <th scope="col">Product</th>
+                              <th scope="col">Price</th>
+                              <th scope="col">Status</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">#2049</th>
+                              <td style="width: 150px;">Brandon Jacob</td>
+                              <td>At praesentium minu</td>
+                              <td>$64</td>
+                              <td><button class="btn btn-success">Approved</button></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">#2457</th>
+                              <td>Bridie Kessler</td>
+                              <td>Blanditiis dolor omnis similique</td>
+                              <td>$47</td>
+                              <td><button class="btn btn-warning">pending</button></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">#2147</th>
+                              <td>Ashleigh Langosh</td>
+                              <td>At recusandae consectetur</td>
+                              <td>$147</td>
+                              <td><button class="btn btn-success">Approved</button></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">#2049</th>
+                              <td>Angus Grady</td>
+                              <td>Ut voluptatem id earum et</td>
+                              <td>@$67</td>
+                              <td><button class="btn btn-danger">Rejected</button></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">#2049</th>
+                              <td>Raheem Lehner</td>
+                              <td>Sunt similique distinctio</td>
+                              <td>$165</td>
+                              <td><button class="btn btn-success">Approved</button></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    
+
+                </div>
+
+                <div style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);border: 0px;" class="col-xl-12 mt-4">
+                  <div class="p-3 border bg-light">
+                    <div class="row">
+                      <div class="col-xl-6 col-6">
+                        <p>Top Selling | Today</p>
+                  </div>
+                  <div class="col-xl-6 col-6">
+                    <div style="float: right;" class="btn-group dropstart">
+                      <a style="text-decoration: none;" href="" type="button" class="dropdown fw-bold" data-bs-toggle="dropdown" aria-expanded="false">
+                        ...
+                      </a>
+                      <ul style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="dropdown-menu mt-4">
+                        <div class="container-fluid">
+                        <p>FILTER</p>
+                        <p>Today</p>
+                        <p>This Month</p>
+                        <p>This Year</p>
+                      </div>
+                      </ul>
+                    </div>
+                  </div>
+                
+
+                  </div>  
+                  <div class="table-responsive">
+                  <table class="table table-borderless">
+                    <thead>
+                      <tr>
+                        <th scope="col">#2644</th>
+                        <th scope="col">Preview</th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th style="width: 60px;height: 60px;" scope="row"><img class="img-fluid" src="../img/555.jpg" alt=""></th>
+                        <td style="width: 500px;"><a style="text-decoration: none;" href=""> Ut inventore ipsa voluptas nulla</a></td>
+                        <td>$64</td>
+                        <td>124</td>
+                        <td>$5,828</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img class="img-fluid" src="../img/product-2.jpg" alt=""></th>
+                        <td><a style="text-decoration: none;" href=""> Exercitationem similique doloremque</a></td>
+                        <td>#46</td>
+                        <td>98</td>
+                        <td>$4,508</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img class="img-fluid" src="../img/product-3.jpg" alt=""></th>
+                        <td><a style="text-decoration: none;" href="">Doloribus nisi exercitationem</a></td>
+                        <td>$59</td>
+                        <td>74</td>
+                        <td>$4,366</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img class="img-fluid" src="../img/product-4.jpg" alt=""></th>
+                        <td><a style="text-decoration: none;" href="">Officiis quaerat sint rerum error</a></td>
+                        <td>$32</td>
+                        <td>63</td>
+                        <td>$2,016</td>
+                      </tr>
+                      <tr>
+                        <th scope="row"><img class="img-fluid" src="../img/product-5.jpg" alt=""></th>
+                        <td><a style="text-decoration: none;" href="">Sit unde debitis delectus repellendus</a></td>
+                        <td>$79</td>
+                        <td>41</td>
+                        <td>$3,239</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              </div>
+
+              </div>
+              </div>
+              </div>
+
+
+         <div style="margin-top: 49px; border-radius: 5px;" class="col-xl-4 col-lg-4">
+          <div class="container-fluid">
+         <br>
+         <br>
+         <br>
+         <div class="row">
+          <div style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="col-xl-12 bg-white">    
+            <div class="row">
+              <h1></h1>
+              <br>
+              <div class="col-xl-8 col-8">
+              <p>Recent Activity | Today</p>
+        </div>
+        <div class="col-xl-4 col-4">
+          <div style="float: right;" class="btn-group dropstart">
+            <a style="text-decoration: none;" href="" type="button" class="dropdown fw-bold" data-bs-toggle="dropdown">
+              ...
+            </a>
+            <ul style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="dropdown-menu mt-4">
+              <div class="container-fluid">
+              <p>FILTER</p>
+              <p>Today</p>
+              <p>This Month</p>
+              <p>This Year</p>
+            </div>
+            </ul>
+          </div>
+         </div>
+        </div>
+
+        <div class="col-xl-12">
+          <p>33 min <i class="fas fa-circle text-success ms-2"></i><span>Quia quae rerum <b style="margin-left: 80px;">explicabo officiis </b>beatae</span></p>
+        </div>
+
+        <div class="col-xl-12">
+        <p>56 min <i class="fas fa-circle text-danger ms-2"></i><span>Voluptatem blanditiis <span style="margin-left: 80px;"> blanditiis eveniet</span></span></p>
+        </div>
+
+        <div class="col-xl-12">
+          <p>2 hrs <i style="margin-left: 23px;" class="fas fa-circle text-primary"></i><span>Voluptates corrupti <span style="margin-left: 80px;">molestias voluptatem</span></span></p>
+        </div>
+         
+        <div class="col-xl-12">
+          <p>1  day <i style="margin-left: 20px;" class="fas fa-circle text-primary"></i><span>Tempore autem saepe  <b style="margin-left: 80px;">occaecati voluptatem </b><span style="margin-left: 70px;"> tempore</span></span></p>
+        </div>
+    
+
+        <div class="col-xl-12">
+          <p>2 days <i style="margin-left: 14px;" class="fas fa-circle text-primary"></i><span>Est sit eum reiciendis <span style="margin-left: 70px;">exercitationem</span></span></p>
+        </div>
+
+        <div class="col-xl-12">
+          <p>4  weeks <i style="margin-left: 5px;" class="fas fa-circle text-primary"></i><span>Dicta dolorem harum nulla  <span style="margin-left: 70px;">eius. Ut quidem quidem </span><span style="margin-left: 70px;">sit quas</span></span></p>
+        </div>
+    </div>
+
+    <div style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="col-lg-12 bg-white mt-4">
+      <div class="row">
+        <div class="col-xl-9 col-9">
+          <p>Budget Report | This Month</p>
+    </div>
+    <div class="col-xl-3 col-3">
+      <div style="float: right;" class="btn-group dropstart">
+        <a style="text-decoration: none;" href="" type="button" class="dropdown fw-bold" data-bs-toggle="dropdown">
+          ...
+        </a>
+        <ul style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="dropdown-menu mt-4">
+          <div class="container-fluid">
+          <p>FILTER</p>
+          <p>Today</p>
+          <p>This Month</p>
+          <p>This Year</p>
+        </div>
+        </ul>
+      </div>
+      
+      </div>
+      
+      <div class="col-xl-12">
+        <div class="row">
+          <div class="col-6">
+            <span class="btn btn-primary"></span><span style="font-size: 9pt;">Allocated Budget</span>
+          </div>
+          <div class="col-6">
+            <span class="btn btn-success"></span><span style="font-size: 9pt;">Actual Spending</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-12">
+      <img class="img-fluid" src="../img/2006.jpg" alt="">
+    </div>
+      </div>
+
+    <div style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="col-lg-12 bg-white mt-4">
+      <div class="row">
+        <div class="col-xl-9 col-9">
+          <p>Website Traffic | Today</p>
+    </div>
+    <div class="col-xl-3 col-3">
+      <div style="float: right;" class="btn-group dropstart">
+        <a style="text-decoration: none;" href="" type="button" class="dropdown fw-bold" data-bs-toggle="dropdown">
+          ...
+        </a>
+        <ul style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="dropdown-menu mt-4">
+          <div class="container-fluid">
+          <p>FILTER</p>
+          <p>Today</p>
+          <p>This Month</p>
+          <p>This Year</p>
+        </div>
+        </ul>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <span class="btn btn-primary"></span><span style="font-size: 8pt;">Search</span>
+        </div>
+        <div class="col-4">
+          <span class="btn btn-success"></span><span style="font-size: 8pt;">Direct</span>
+        </div>
+        <div class="col-4">
+          <span class="btn btn-primary"></span><span style="font-size: 9pt;">Email</span>
+        </div>
+        <div class="col-5">
+          <span class="btn btn-success"></span><span style="font-size: 9pt;">Unon Ads</span>
+        </div>
+        <div class="col-7">
+          <span class="btn btn-success"></span><span style="font-size: 9pt;">Video Ads</span>
+        </div>
+      </div>
+      <div class="col-xl-12">
+        <img class="img-fluid" src="../img/20006.jpg" alt="">
+      </div>
+    </div>
+    </div>
+    
+
+    <div style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="col-lg-12 col-lg-12 bg-white mt-4">
+      <div class="row">
+        <div class="col-xl-9 col-9">
+          <p>News & Updates | Today</p>
+    </div>
+    <div class="col-xl-3 col-3">
+      <div style="float: right;" class="btn-group dropstart">
+        <a style="text-decoration: none;" href="" type="button" class="dropdown fw-bold" data-bs-toggle="dropdown">
+          ...
+        </a>
+        <ul style="border: 0px;box-shadow: 0px 2px 20px rgb(1 41 112 / 10%);" class="dropdown-menu mt-4">
+          <div class="container-fluid">
+          <p>FILTER</p>
+          <p>Today</p>
+          <p>This Month</p>
+          <p>This Year</p>
+        </div>
+        </ul>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 col-4">
+          <img class="img-fluid" src="../img/news-1.jpg" alt="">
+        </div>
+        <div class="col-xl-8 col-8">
+          <h6>Nihil blanditiis at in nihil autem</h6>
+          <p>Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum...</p>
+        </div>
+
+        <div class="col-xl-4 col-4">
+          <img class="img-fluid" src="../img/news-2.jpg" alt="">
+        </div>
+        <div class="col-xl-8 col-8">
+          <h6>Quidem autem et impedit</h6>
+          <p>Illo nemo neque maiores vitae officiis cum eum turos elan dries werona nande...</p>
+        </div>
+
+        <div class="col-xl-4 col-4">
+          <img class="img-fluid" src="../img/news-3.jpg" alt="">
+        </div>
+        <div class="col-xl-8 col-8">
+          <h6>Id quia et et ut maxime similique occaecati ut</h6>
+          <p>Fugiat voluptas vero eaque accusantium eos. Consequuntur sed ipsam et totam...</p>
+        </div>
+
+        <div class="col-xl-4 col-4">
+          <img class="img-fluid" src="../img/news-4.jpg" alt="">
+        </div>
+        <div class="col-xl-8 col-8">
+          <h6>Laborum corporis quo dara net para</h6>
+          <p>Qui enim quia optio. Eligendi aut asperiores enim repellendusvel rerum cuder...</p>
+        </div>
+
+        <div class="col-xl-4 col-4">
+          <img class="img-fluid" src="../img/news-5.jpg" alt="">
+        </div>
+        <div class="col-xl-8 col-8">
+          <h6>Et dolores corrupti quae illo quod dolor</h6>
+          <p>Odit ut eveniet modi reiciendis. Atque cupiditate libero beatae dignissimos eius...</p>
+        </div>
+      </div>
+    </div>
+    
+
+   </div>
+   </div>
+   </div>
+   </div><hr>
+
+   <div class="col-xl-12">
+     <p class="text-center">© Copyright <b> NiceAdmin.</b> All Rights Reserved <br>
+      Designed by <a style="text-decoration: none;" href="">BootstrapMade</a></p>
+   </div>
+
+
+      </div>
+      </div>
+      </main>
+    <!---------
+    -----------
+    -----------
+    --footer --
+    -----------
+    -----------
+    ---------->
+      <footer id="footer">
+        <div style="width: 300px;margin-top: 57px;" class="offcanvas offcanvas-start show"  data-bs-scroll="true" data-bs-backdrop="false" id="offcanvasScrolling">
+         <div class="offcanvas-body">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+                <!--accodion-->
+                          <div>
+                            <ul>
+                              <li style="list-style: none;margin-left: -12px;">
+                                <a href="#"><i style="font-size: 15pt;" class="fa-solid fa-border-all"></i><span class="ms-2">Dashboard</span></a>
+                              </li>
+                            </ul>
+                          </div>
+                
+                          <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="nav-item">
+                              <h2 class="accordion-header" id="flush-headingOne">
+                                <button style="border: none;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                  <a style="text-decoration: none;color: #012970;" href=""><i style="font-size: 15pt;" class="fa-solid fa-bars-progress"></i><span class="ms-2">Components</span></a>
+                                </button>
+                              </h2>
+                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flus-headingOne" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li><a href="#Components-alerts"><span>Alerts</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Components-accordion"><span>Accordion</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Components-badges"><span>Badges</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Components-breadcrumbs"><span>Breadcrumbs</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Components-buttons"><span>Buttons</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Components-cards"><span>Cards</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Components-carousel"><span>Carousel</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Components-listgroup"><span>List Group</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Components-modal"><span>Modal</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Components-tabs"><span>Tabs</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Components-pagination"><span>Pagination</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Components-progress"><span>Progress</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Components-spinners"><span>Spinners</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Components-tooltips"><span>Tooltips</span></a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <!--Forms-->
+                            <div class="nav-item">
+                              <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  <a style="text-decoration: none;color: #012970;" href=""> <i style="font-size: 15pt;" class="fa-regular fa-file-lines"></i><span class="ms-3">Forms</span></a>
+                                </button>
+                              </h2>
+                              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li style="margin-top: 20px;"><a href="#form-elements"><span>Form Elements</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#form-layouts"><span>Form Layouts</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#form-editors"><span>Form Editors</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#form-validation"><span>Form Validation</span></a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <!--Tables-->
+                            <div class="nav-item">
+                              <h2 class="accordion-header" id="flush-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                  <a style="text-decoration: none;color: #012970;" href=""><i style="font-size: 13pt;" class="fa-solid fa-table-list"></i><span class="ms-2"> Tables</span></a>
+                                </button>
+                              </h2>
+                              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul>
+                                      <li style="margin-top: 20px;"><a href="#general-tables"><span>General Tables</span></a></li>
+                                      <li style="margin-top: 20px;"><a href="#data-tables"><span>Data Tables</span></a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <!--Charts-->
+                            <div class="nav-item">
+                              <h2 class="accordion-header" id="flush-headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  <a style="text-decoration: none;color: #012970;" href=""><i class="fa-solid fa-signal"></i><span class="ms-2"> Charts</span></a>
+                                </button>
+                              </h2>
+                              <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li style="margin-top: 20px;"><a href="#chart-js"><span>Chart.js</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#ApexCharts"><span>ApexCharts</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#EChart"><span>EChart</span></a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <!--Icons-->
+                            <div class="nav-item">
+                              <h2 class="accordion-header" id="flush-headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                  <a style="text-decoration: none;color: #012970;" href=""><i style="font-size: 15pt;" class="far fa-gem"></i><span class="ms-2">Icons</span></a>
+                                </button>
+                              </h2>
+                              <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                  <ul>
+                                    <li style="margin-top: 20px;"><a href="#bootstrap-icons"><span>Bootstrap Icons</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#remix-icons"><span>Remix Icons</span></a></li>
+                                    <li style="margin-top: 20px;"><a href="#Boxicons"><span>Boxicons</span></a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                
+                            <div>
+                              <ul>
+                              <p style="margin-left: -15px;">Pages</p>
+                              </ul>
+                
+                              <ul class="ull">
+                                <li style="list-style: none;">
+                                  <a style="margin-left: -15px;" href="#user-profile"><i style="font-size: 15pt;" class="far fa-user"></i><span class="ms-2">Profile</span></a>
+                              </li>
+                
+                              <li style="list-style: none;">
+                                  <a style="margin-left: -15px;margin-top: 40px;" href="#pages-faq"><i style="font-size: 15pt;" class="fa-regular fa-circle-question"></i><span class="ms-2">F.A.Q</span></a>
+                              </li>
+                
+                              <li style="list-style: none;">
+                                  <a style="margin-left: -15px;" href="#pages-contact"><i style="font-size: 15pt;" class="far fa-envelope"></i><span class="ms-2">Contact</span></a>
+                              </li>
+                              <li style="list-style: none;">
+                                  <a style="margin-left: -15px;" href="#pages-register"><i style="font-size: 15pt;" class="far fa-list-alt"></i><span class="ms-2">Register</span></a>
+                              </li>
+                
+                              <li style="list-style: none;">
+                                  <a style="margin-left: -15px;" href="#pages-login"><i style="font-size: 15pt;" class="fas fa-arrow-right"></i><span class="ms-2">Login</span></a>
+                              </li>
+                
+                              <li style="list-style: none;">
+                                  <a style="margin-left: -15px;" href="#pages-error"><i style="font-size: 15pt;" class="fas fa-minus-circle"></i><span class="ms-2">Error</span></a>
+                              </li>
+                
+                              <li style="list-style: none;">
+                                <a style="margin-left: -15px;" href="#pages-blank"><i style="font-size: 15pt;" class="far fa-file"></i><span class="ms-2">Blank</span></a>
+                              </li>
+                              </ul>
+                           </div>
+                        </div>
+                </div>
+            </div>
+       </div>
+       </div>
+      </footer>
+      <script src="../js/app2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+</body>
+</html>

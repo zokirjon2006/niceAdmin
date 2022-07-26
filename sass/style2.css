@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  /* position: fixed; */
+  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+@media screen and (max-width: 1300px) {
+  header #search {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  header #fv, header #drop {
+    display: none;
+  }
+}
+
+footer {
+  width: 300px;
+  height: 600px;
+  position: fixed;
+  margin-top: 57px;
+  background-color: white;
+  display: inline-block;
+}
+@media screen and (max-width: 1300px) {
+  footer {
+    display: none;
+  }
+}
+footer .div {
+  height: 300px;
+}
+footer li {
+  list-style: circle;
+  color: #012970;
+}
+footer li a {
+  text-decoration: none;
+  color: #012970;
+}
+footer .ull li {
+  margin-top: 25px;
+}
+
+main {
+  width: 78%;
+  float: right;
+  background-color: #f8f9fa;;
+}
+main #st {
+  margin-top: 40px;
+}
+main #st h1 {
+  font-size: 20pt;
+}
+@media screen and (max-width: 1300px) {
+  main {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c4dff6; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c4dff6; 
+}
